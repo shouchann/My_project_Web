@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="About.css">
     <script type="text/javascript" src="main.js"></script>
     <script src="https://kit.fontawesome.com/f655c766e5.js" crossorigin="anonymous"></script>
     <script
@@ -24,25 +23,28 @@
       <div class="menu">
         <a href="index.html"><div class="menu_item">TOP</div></a>
         <a href="About.html"><div class="menu_item">ABOUT</div></a>
+        <a href="QA.html"><div class="menu_item">Q&A</div></a>
         <a href="Contact.html"><div class="menu_item">CONTACT</div></a>
-        <a href="Q&A.html"><div class="menu_item">Q&A</div></a>
       </div>
 </header>
 <body>
-    <div class="contact_form">
-        <h2>プロジェクトに関するご質問・不安点などありましたら下記フォームよりお問い合わせください。</h2>
-        <form action="Contact.html" method="post">
-            <ul>
-                <p>お名前 / Name</p>
-                <input class="question" type="text">
-                <p>メールアドレス / MailAddress</p>
-                <input class="question" type="mail">
-                <p>タイトル / Title</p>
-                <input class="question" type="text">
-                <p>メッセージ / Message</p>
-                <textarea class="question" id="message" name="message"></textarea>
-            </ul>
-            <input class="submit" type="submit" value="送信 / Submit">
-        </form>
+    <h1 class="contact_title">CONTACT</h1>
+    <div class="contact_body">
+        <div class="contact_form">
+            <h2>プロジェクトに関するご質問・不安点などありましたら下記フォームよりお問い合わせください。</h2>
+            <form action="Contact.html" method="post">
+                <ul>
+                    <p>お名前 / Name</p>
+                    <input class="question" type="text">
+                    <p>メールアドレス / MailAddress</p>
+                    <input class="question" type="mail">
+                    <p>タイトル / Title</p>
+                    <input class="question" type="text">
+                    <p>メッセージ / Message</p>
+                    <textarea class="question" id="message" name="message"></textarea>
+                </ul>
+                <input class="submit" type="submit" value="送信 / Submit">
+            </form>
+        </div>
     </div>
 </body>

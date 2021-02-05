@@ -1,24 +1,64 @@
 *{
     font-family: 'M PLUS 1p', sans-serif;
 }
+.index_body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .title{
     margin-top: 8em;
     text-align: center;
     font-size: 30px;
+    background-color: #fff;
+    width: 80%;
+    height: auto;
+    border: 2px solid #f9f9f9;
+    border-radius: 10em;
+    box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
 }
 .title h1{
     font-family: 'Slabo 27px', serif;
 
 }
+h1.about_title{
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 50px;
+  background-color: #fff;
+  width: 20%;
+  height: auto;
+  border: 2px solid #f9f9f9;
+  border-radius: 10em;
+  box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
+}
+
+.session{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Session_title{
+  text-align: left;
+}
 .Session_title h1{
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Slabo 27px', serif;
-    margin-left: 2rem;
 }
 .Session_title h2{
-    border-left: 5px solid #6495ed;
-    border-radius: 5px;
-    margin-left: 2rem;
+  font-size: 50px;
+  width: 110%;
+  height: 2em;
+  border-bottom: 3px solid rgba(0,0,0,0.1);
+  box-shadow: 0 3px 0 rgba(255,255,255,1);
+}
+.session p{
+  font-size: 20px;
+}
+.bold{
+  font-size: 20px;
+  color: #a52a2a;
 }
 /*----------------------------
 * メニュー開閉ボタン
@@ -40,7 +80,7 @@
   .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9";
     font-family: FontAwesome;
-}
+  }
   
   /*----------------------------
   * メニュー本体
@@ -101,11 +141,28 @@
   .menu.is-active{
     transform: translateX(0);
   }
+
+.contact_title{
+  text-align: center;
+  background-color: #fff;
+  width: 20%;
+  height: auto;
+  border: 2px solid #f9f9f9;
+  border-radius: 10em;
+  box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
+}
 .contact_form{
   text-align: center;
 }
 .contact_form h2{
   font-size: 20px;
+  background-color: #fff;
+  margin-bottom: 4em;
+  width: 110%;
+  height: 2em;
+  border-bottom: 3px solid rgba(0,0,0,0.1);
+  box-shadow: 0 3px 0 rgba(255,255,255,1);
+  
 }
 
 .question{
@@ -134,5 +191,11 @@ input.submit:hover{
 }
 #message{
   height: 20em;
+}
+.contact_body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
