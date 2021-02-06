@@ -1,0 +1,222 @@
+*{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  content: "\f0c9";
+  font-family: FontAwesome;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+.menu_item{
+  font-size: 40px;
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+/* -----------aタグアンダーバーアニメーション-------------- */
+a{
+  text-decoration: none;
+  display: block;
+  padding: 0 0 5px;
+  text-decoration: none;
+}
+a::after {
+  border-bottom: solid 2px white;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+a:hover::after {
+  width: 100%;
+}
+/* -----------aタグアンダーバーアニメーション-------------- */
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(110vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 481px){
+  .index_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title{
+      margin-top: 8em;
+      text-align: center;
+      font-size: 30px;
+      background-color: #fff;
+      width: 80%;
+      height: auto;
+      border: 2px solid #f9f9f9;
+      border-radius: 10em;
+      box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
+  }
+  .title h1{
+      font-family: 'Slabo 27px', serif;
+  
+  }
+  h1.about_title{
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 50px;
+    background-color: #fff;
+    width: 20%;
+    height: auto;
+    border: 2px solid #f9f9f9;
+    border-radius: 10em;
+    box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
+  }
+  
+  .session{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Session_title{
+    text-align: left;
+  }
+  .Session_title h1{
+      font-size: 70px;
+      font-family: 'Slabo 27px', serif;
+  }
+  .Session_title h2{
+    font-size: 50px;
+    width: 110%;
+    height: 2em;
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+    box-shadow: 0 3px 0 rgba(255,255,255,1);
+  }
+  .session p{
+    font-size: 20px;
+  }
+  .bold{
+    font-size: 20px;
+    color: #a52a2a;
+  }
+  .contact_title{
+    text-align: center;
+    background-color: #fff;
+    width: 20%;
+    height: auto;
+    border: 2px solid #f9f9f9;
+    border-radius: 10em;
+    box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
+  }
+  .contact_form{
+    text-align: center;
+  }
+  .contact_form h2{
+    font-size: 20px;
+    background-color: #fff;
+    margin-bottom: 4em;
+    width: 110%;
+    height: 2em;
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+    box-shadow: 0 3px 0 rgba(255,255,255,1);
+    
+  }
+  
+  .question{
+    outline:0;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 0.7em;
+  }
+  .question.active{
+    border: 2px double black;
+    border-radius: 0.7em;
+    outline:0;
+    width: 60%;
+  }
+  input.submit{
+    outline:0;
+    width: 40%;
+    height: 5em;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 2em;
+  }
+  input.submit:hover{
+    background-color: #b0e0e6;
+    transition: .3s;
+  }
+  #message{
+    height: 20em;
+  }
+  .contact_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .QA{
+    text-align: center;
+    background-color: #fff;
+    width: 10%;
+    height: auto;
+    border: 2px solid #f9f9f9;
+    border-radius: 10em;
+    box-shadow: 0px 15px 11px -5px rgba(10,10,10,0.3);
+  }
+}
+
+
+@media screen and (max-width: 480px){
+  .index_body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
