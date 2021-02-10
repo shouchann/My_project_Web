@@ -1,8 +1,9 @@
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
 *{
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
 	/* 適用したいスタイル */
 
 /*----------------------------
