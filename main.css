@@ -2,6 +2,9 @@
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* 適用したいスタイル */
+
 /*----------------------------
 * メニュー開閉ボタン
 *----------------------------*/
@@ -475,4 +478,4 @@ a.BIG-TITLE {
     justify-content: center;
   }
 }
-
+}
